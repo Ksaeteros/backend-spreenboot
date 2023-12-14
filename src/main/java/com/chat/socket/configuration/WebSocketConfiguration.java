@@ -8,7 +8,7 @@ import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
 
 @Configuration
-@CrossOrigin(origins = "https://frontend-angular-f7810.web.app")
+@CrossOrigin(origins = "http://frontend-angular-f7810.web.app")
 @EnableWebSocketMessageBroker
 public class WebSocketConfiguration implements WebSocketMessageBrokerConfigurer {
 
@@ -21,7 +21,7 @@ public class WebSocketConfiguration implements WebSocketMessageBrokerConfigurer 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chat-socket")
-                .setAllowedOrigins("https://frontend-angular-f7810.web.app") // Sin la barra al final
+                .setAllowedOrigins("http://frontend-angular-f7810.web.app") // Sin la barra al final
                 .withSockJS();
     }
 }

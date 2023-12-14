@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@CrossOrigin(origins = "https://frontend-angular-f7810.web.app")
+@CrossOrigin(origins = "http://frontend-angular-f7810.web.app")
 @AllArgsConstructor
 public class ChatMessage {
     String message;
