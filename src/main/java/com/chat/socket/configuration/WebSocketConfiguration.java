@@ -19,7 +19,7 @@ public class WebSocketConfiguration implements WebSocketMessageBrokerConfigurer 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chat-socket")
-                .setAllowedOrigins("https://frontend-angular-f7810.web.app/")
+                .setAllowedOrigins("https://frontend-angular-f7810.web.app") // Sin la barra al final
                 .withSockJS();
     }
 }
