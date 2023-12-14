@@ -1,0 +1,4 @@
+com\chat\socket\configuration\WebSocketConfiguration.class
+com\chat\socket\dto\ChatMessage.class
+com\chat\socket\controller\WebSocketController.class
+com\chat\socket\MsChatSocketApplication.class
